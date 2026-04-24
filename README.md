@@ -1,5 +1,6 @@
 # fantastic-usefull-scraper
-A multi-stage pipeline for extracting structured, AI-enhanced Markdown documents from YouTube tutorials. Each output .md file contains timestamped transcription, visual frame descriptions, and chapter-organized content — optimized for knowledge base ingestion, retrieval-augmented systems, and structured content pipelines
+A multi-stage pipeline for extracting structured, AI-enhanced Markdown documents from YouTube tutorials. Each output .md file contains timestamped transcription, visual frame descriptions, and chapter-organized content — optimized for knowledge base ingestion, retrieval-augmented systems, and structured content pipelines.
+What makes this very simple pipeline stand out the most is the fact that a lot of time is dedicated to fine-tuning the output. The knowledge base ingestion process is very delicate and many are not even aware of it. And the overall quality of the output from your bot depends on it, and not only that, but also the consumption of tokens and available memory, which increases proportionally with the degree of degradation of your input material. What is meant by this degradation? Incorrectly formatted and embedded images, poor indexing and therefore more difficult access to knowledge, etc.
 ## Overview
 
 The pipeline runs across two systems:
