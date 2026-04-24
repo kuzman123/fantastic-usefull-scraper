@@ -61,7 +61,8 @@ apt update && apt install -y ffmpeg
 ### Windows (Stage 1 only)
 
 ```cmd
-cd C:\yt_scraper
+git clone fantastic-usefull-scraper
+cd C:\fantastic-usefull-scraper
 python -m venv venv
 venv\Scripts\activate
 pip install yt-dlp pillow
@@ -123,7 +124,7 @@ Expected output starts with ffmpeg version 7.x.x .... If you see 'ffmpeg' is not
 ### Download models (Linux, once per environment)
 
 ```bash
-cd /workspace/yt_scraper
+cd /workspace/fantastic-usefull-scraper
 python download_models.py
 ```
 
@@ -140,7 +141,7 @@ Downloads:
 
 **On Windows:**
 ```cmd
-cd C:\yt_scraper
+cd C:\fantastic-usefull-scraper
 venv\Scripts\activate
 
 # Add YouTube URLs to urls.txt (one per line, # for comments)
@@ -154,12 +155,12 @@ Upload `output.tar.gz` to your Linux/cloud environment.
 **On Linux:**
 ```bash
 source /workspace/venv/bin/activate
-cd /workspace/yt_scraper
+cd /workspace/fantastic-usefull-scraper
 
 tar -xzf output.tar.gz
 export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
 
-python run_all_simplepod.py
+python run_all.py
 ```
 
 Final `.md` files are in `output/md/`.
@@ -170,11 +171,11 @@ Final `.md` files are in `output/md/`.
 
 ```bash
 source /workspace/venv/bin/activate
-cd /workspace/yt_scraper
+cd /workspace/fantastic-usefull-scraper
 
 # Add URLs to urls.txt
 python stage1_download.py
-python run_all_simplepod.py
+python run_all.py
 ```
 
 ---
