@@ -61,8 +61,8 @@ apt update && apt install -y ffmpeg
 ### Windows (Stage 1 only)
 
 ```cmd
-git clone fantastic-usefull-scraper
-cd C:\fantastic-usefull-scraper
+git clone [fantastic-usefull-scraper](https://github.com/kuzman123/fantastic-usefull-scraper.git)
+cd fantastic-usefull-scraper
 python -m venv venv
 venv\Scripts\activate
 pip install yt-dlp pillow
@@ -72,6 +72,8 @@ pip install yt-dlp pillow
 
 ```bash
 cd /workspace
+git clone [fantastic-usefull-scraper](https://github.com/kuzman123/fantastic-usefull-scraper.git)
+cd fantastic-usefull-scraper
 python -m venv venv
 source venv/bin/activate
 
@@ -141,7 +143,7 @@ Downloads:
 
 **On Windows:**
 ```cmd
-cd C:\fantastic-usefull-scraper
+cd fantastic-usefull-scraper
 venv\Scripts\activate
 
 # Add YouTube URLs to urls.txt (one per line, # for comments)
@@ -170,8 +172,8 @@ Final `.md` files are in `output/md/`.
 ### Linux-only workflow (all stages)
 
 ```bash
-source /workspace/venv/bin/activate
-cd /workspace/fantastic-usefull-scraper
+source/workspace/venv/bin/activate
+cd/workspace/fantastic-usefull-scraper
 
 # Add URLs to urls.txt
 python stage1_download.py
