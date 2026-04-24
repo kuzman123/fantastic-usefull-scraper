@@ -6,9 +6,9 @@ The pipeline runs across two systems:
 
 - **Windows** — Stage 1: video download, audio extraction, frame extraction (no GPU required)
 - **Linux / Cloud GPU** — Stages 2–4: transcription, deduplication, vision description, final assembly
-Why?
-YouTube Download — Windows vs. Linux
-Stage 1 (video download) is intentionally designed to run on Windows. Cloud GPU providers assign IP addresses that YouTube frequently flags as automated traffic, resulting in bot-detection blocks (Sign in to confirm you're not a bot). Residential IPs on Windows machines are not subject to this restriction under normal usage.
+- **Why?
+- **YouTube Download — Windows vs. Linux
+- **Stage 1 (video download) is intentionally designed to run on Windows. Cloud GPU providers assign IP addresses that YouTube frequently flags as automated traffic, resulting in bot-detection blocks (Sign in to confirm you're not a bot). Residential IPs on Windows machines are not subject to this restriction under normal usage.
 You can to Stage 1 on Linux Cloud GPU also. I've checked multiple times and it works, except once when I was blocked. All from the same YouTube account.
 
 Both stages share the same `output/` folder structure with relative paths, making it fully portable across operating systems without any configuration changes.
