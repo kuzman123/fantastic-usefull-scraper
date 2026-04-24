@@ -88,10 +88,15 @@ apt update && apt install -y ffmpeg
 Go to https://www.gyan.dev/ffmpeg/builds/ and download ffmpeg-release-essentials.zip (stable release).
 2. Extract
 Extract the zip to C:\ffmpeg. Avoid paths with spaces or special characters (Desktop, Downloads, user folders). The result should look like:
-C:\ffmpeg\bin\
-ffmpeg.exe
-ffprobe.exe
-ffplay.exe
+
+```cmd
+C:\ffmpeg\
+    bin\
+        ffmpeg.exe
+        ffprobe.exe
+        ffplay.exe
+```
+
 4. Add to System PATH
 
 Press Win+S, search for "Edit the system environment variables", press Enter
