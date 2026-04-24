@@ -83,6 +83,32 @@ pip install xformers==0.0.30 --index-url https://download.pytorch.org/whl/cu126
 apt update && apt install -y ffmpeg
 ```
 
+### Installing ffmpeg on Windows
+1. Download
+Go to https://www.gyan.dev/ffmpeg/builds/ and download ffmpeg-release-essentials.zip (stable release).
+2. Extract
+Extract the zip to C:\ffmpeg. Avoid paths with spaces or special characters (Desktop, Downloads, user folders). The result should look like:
+C:\ffmpeg\
+    bin\
+        ffmpeg.exe
+        ffprobe.exe
+        ffplay.exe
+3. Add to System PATH
+
+Press Win+S, search for "Edit the system environment variables", press Enter
+Click "Environment Variables..."
+In the System variables section (bottom panel — not User variables), select Path → click Edit
+Click New → enter C:\ffmpeg\bin
+Click OK on all open dialogs
+
+Use System variables, not User variables. This ensures ffmpeg is accessible to all processes, scheduled tasks, and scripts regardless of which user account runs them.
+
+4. Verify
+Open a new Command Prompt window (important — existing windows won't see the updated PATH) and run:
+cmdffmpeg -version
+Expected output starts with ffmpeg version 7.x.x .... If you see 'ffmpeg' is not recognized, restart the Command Prompt and try again.
+
+
 ### Download models (Linux, once per environment)
 
 ```bash
