@@ -13,7 +13,7 @@ For training captioning, you should use this prompt: "You are a professional vid
 The pipeline runs across two systems:
 
 - **Windows** — Stage 1: video download, audio extraction, frame extraction (no GPU required)
-- **Linux / Cloud GPU** — Stages 2–4: transcription, deduplication, vision description, final assembly
+- **Linux / Cloud GPU / Windows** — Stages 2–4: transcription, deduplication, vision description, final assembly
 
 YouTube Download — Windows vs. Linux
 
