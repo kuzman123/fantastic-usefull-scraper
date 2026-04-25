@@ -29,10 +29,10 @@ Both stages share the same `output/` folder structure with relative paths, makin
 | Stage | Script | Runs on | Description |
 |-------|--------|---------|-------------|
 | 1 | `stage1_download.py` | Windows or Linux | Download video, extract audio (16kHz mono WAV), extract frames (scene-change or interval) |
-| 2 | `stage2_transcribe.py` | Linux / GPU | Transcribe audio with faster-whisper, group by sentence |
-| 2b | `stage2b_dedup.py` | Linux / GPU | CLIP-based frame deduplication (enabled by default, optional) |
-| 3 | `stage3_vision.py` | Linux / GPU | Describe each frame using Qwen2.5-VL vision model |
-| 4 | `stage4_assemble.py` | Linux / GPU | Assemble final `.md` with timestamps, IMAGE descriptions, and chapter sections |
+| 2 | `stage2_transcribe.py` | Windows or Linux | Transcribe audio with faster-whisper, group by sentence |
+| 2b | `stage2b_dedup.py` | Windows or Linux | CLIP-based frame deduplication (enabled by default, optional) |
+| 3 | `stage3_vision.py` | Windows or Linux | Describe each frame using Qwen2.5-VL vision model |
+| 4 | `stage4_assemble.py` | Windows or Linux | Assemble final `.md` with timestamps, IMAGE descriptions, and chapter sections |
 
 ---
 
