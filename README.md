@@ -46,8 +46,8 @@ Both stages share the same `output/` folder structure with relative paths, makin
 | Environment | CUDA Driver | PyTorch | Torchvision | xformers |
 |-------------|------------|---------|-------------|----------|
 | Windows (Stage 1 only) | Any | Not required | Not required | Not required |
-| Linux CUDA 12.6 | 12.6+ | 2.7.1+cu126 | 0.22.1+cu126 | 0.0.30 (cu126) |
-| Linux CUDA 12.8 | 12.8+ | 2.7.1+cu128 | 0.22.1+cu128 | Not compatible with py3.10 |
+| Windows/Linux CUDA 12.6 | 12.6+ | 2.7.1+cu126 | 0.22.1+cu126 | 0.0.30 (cu126) |
+| Windows/Linux CUDA 12.8 | 12.8+ | 2.7.1+cu128 | 0.22.1+cu128 | Not compatible with py3.10 |
 
 > **Important:** xformers is only compatible with the cu126 build on Python 3.10. On cu128 + Python 3.10, xformers has no compatible wheel — set `USE_XFORMERS = False` in `config.py` and the pipeline falls back to SDPA automatically.
 
@@ -183,7 +183,7 @@ Final `.md` files are in `output/md/`.
 
 ---
 
-### Linux-only workflow (all stages)
+### Linux workflow (all stages) - The only problem with this is that it may cause an error (YouTube cookies error) on Stage 1.
 
 ```bash
 source/workspace/venv/bin/activate
@@ -198,7 +198,7 @@ python run_all.py
 
 ### Windows-only workflow (Stage 1 only, no GPU)
 
-Stage 1 runs entirely on CPU via ffmpeg. Useful for pre-processing video locally before transferring to a GPU machine for Stages 2–4.
+Stage 1 runs entirely on CPU via ffmpeg. Useful for pre-processing video locally before transferring to a GPU machine for Stages 2–4. If you install Pytorch + Core dependencies=you can run the whole process on Windows.
 
 ```cmd
 python stage1_download.py
