@@ -3,7 +3,7 @@ A multi-stage pipeline for extracting structured, AI-enhanced Markdown documents
 What makes this very simple pipeline stand out the most is the fact that a lot of time is dedicated to fine-tuning the output. The knowledge base ingestion process is very delicate and many are not even aware of it. And the overall quality of the output from your bot depends on it, and not only that, but also the consumption of tokens and available memory, which increases proportionally with the degree of degradation of your input material. What is meant by this degradation? Incorrectly formatted and embedded images, poor indexing and therefore more difficult access to knowledge, etc.
 
 This pipeline can also be used to capture video material for model training.
-The way and "style" of captioning is defined in the config.pj VISION_PROMPT section in the code. An example of a prompt that is in the script is designed for captioning technical YouTube tutorials.
+The way and "style" of captioning is defined in the config.py VISION_PROMPT section in the code. An example of a prompt that is in the script is designed for captioning technical YouTube tutorials.
 
 For training captioning, youshould use this prompt: "You are a professional video analyst. Please provide an analysis of this video by covering each of these aspects in your answer. Use only one paragraph. DO NOT separate your answer into topics."
 
