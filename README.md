@@ -76,8 +76,7 @@ venv\Scripts\activate
 pip install torch==2.7.1 torchvision==0.22.1 --index-url https://download.pytorch.org/whl/cu126
 
 # Core dependencies
-pip install faster-whisper "transformers>=4.49.0,<5.0" accelerate \
-    "qwen-vl-utils[decord]" opencv-python pillow huggingface_hub
+pip install faster-whisper "transformers>=4.49.0,<5.0" accelerate "qwen-vl-utils[decord]" opencv-python pillow huggingface_hub
 
 pip install yt-dlp pillow
 ```
@@ -95,8 +94,7 @@ source venv/bin/activate
 pip install torch==2.7.1 torchvision==0.22.1 --index-url https://download.pytorch.org/whl/cu126
 
 # Core dependencies
-pip install faster-whisper "transformers>=4.49.0,<5.0" accelerate \
-    "qwen-vl-utils[decord]" opencv-python pillow huggingface_hub
+pip install faster-whisper "transformers>=4.49.0,<5.0" accelerate "qwen-vl-utils[decord]" opencv-python pillow huggingface_hub
 
 # xformers (cu126 only — skip if using cu128)
 pip install xformers==0.0.30 --index-url https://download.pytorch.org/whl/cu126
